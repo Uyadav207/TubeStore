@@ -19,7 +19,7 @@ const customDarkTheme = {
   ...DarkTheme,
   colors:{
     ...DarkTheme.colors,
-    headerColor: "#161616",
+    headerColor: "#1e1e1e",
     iconColor:"white"
   }
 }
@@ -56,7 +56,7 @@ const RootHome=()=>{
           },
         })}
         tabBarOptions={{
-          activeTintColor: 'red',
+          activeTintColor: '#d63447',
           inactiveTintColor: 'gray',
         }}
     >

@@ -33,22 +33,20 @@ borderRadius:20
         <Image
             source={{uri:`https://i.ytimg.com/vi/${props.videoId}/hqdefault.jpg`}}
             style={{
-                borderTopLeftRadius:10,
-                borderTopRightRadius:10,
+                borderRadius:10,
+                borderBottomLeftRadius:0,
+                borderBottomRightRadius:0,
                 margin:0,
-                height: 210
+                height: 210,
             }}   
          />
           <View style={{
               flexDirection:"row",
-              margin:10,
-              marginLeft:10,
-              marginRight:10,
               borderBottomLeftRadius: 20,
-              borderBottomRightRadius:20
-
+              borderBottomRightRadius:20,
+              backgroundColor: "black"
           }}>
-          <MaterialIcons style={{marginTop:15}} name="account-circle" size={40} color="black" />        
+          <MaterialIcons style={{marginTop:2, color:textColor, marginLeft:3}} name="account-circle" size={40}/>        
           <View style={{
               marginLeft: 10
           }}>

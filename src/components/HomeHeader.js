@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import {AntDesign, Ionicons, MaterialIcons} from '@expo/vector-icons';
+import {AntDesign, Ionicons, MaterialIcons, Entypo} from '@expo/vector-icons';
 import Constant from 'expo-constants';
 import {useNavigation, useTheme} from "@react-navigation/native";
 
@@ -21,7 +21,6 @@ export default function Header() {
         backgroundColor: colors.headerColor,
         flexDirection: "row",
         justifyContent: "space-between",
-        elevation:4,
         // shadowOffset: { width:10, height:10,},
         // shadowColor: 'black',
         // shadowOpacity: 0.05
@@ -30,16 +29,16 @@ export default function Header() {
     
     <View style={{
       flexDirection:"row",
-      margin:6
+
     }}>
-        <AntDesign style={{marginLeft:10}} name="youtube" size={28} color = "red" />
+        <Entypo style={{marginLeft:10}} name="video" size={28} color = "red" />
         <Text style={{
           fontSize: 22,
-          marginLeft: 5,
+          marginLeft: 10,
           color: mycolor,
           fontWeight: "bold"
           }}>
-          YouTube
+          
         </Text>
       </View>
       <View style={{
@@ -48,11 +47,9 @@ export default function Header() {
           width: 150,
           margin:5
        }}>
-        <Ionicons style={{marginLeft:10}} name="md-videocam" size={32} color={mycolor} />
         <Ionicons style={{marginLeft:10}} name="md-search" size={32} color={mycolor} 
           onPress={()=>navigation.navigate("search")}
         />        
-        <MaterialIcons style={{marginLeft:10}} name="account-circle" size={32} color={mycolor} />        
       </View>
     </View>
   );

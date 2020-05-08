@@ -5,12 +5,12 @@ import {WebView} from 'react-native-webview'
 
 
 const VideoPlayer = ({route}) =>{
-    const {videoId,title} = route.params
+    const {videoId,title,description} = route.params
     return (
         <View style={{flex:1, marginTop:Constant.statusBarHeight}}>
            <View style={{
                width:"100%",
-               height:700
+               height:500
                }}>
                <WebView 
                javaScriptEnabled={true}
@@ -24,12 +24,21 @@ const VideoPlayer = ({route}) =>{
                    margin:10
                }}
                numberOfLines={2}
-               ellipsizeMode="tail"
+   
                >
-                    {title}
+                   {title}
                </Text>
-            <View style={{borderBottomWidth:2}}/>
-
+            <View style={{borderBottomWidth:1}}/>
+            <Text style={{
+                   fontSize:20,
+                   width:Dimensions.get("screen").width-50,
+                   margin:10
+               }}
+               numberOfLines={1}
+   
+               >
+                    
+               </Text>
             
            </View>
         </View>

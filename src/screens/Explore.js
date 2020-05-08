@@ -28,7 +28,7 @@ const LittleCard = ({name}) =>{
     )
 }
 
-const Explore = () =>{
+const Explore = (props) =>{
     const cardData = useSelector(state=>{
         return state
       })
@@ -43,12 +43,12 @@ const Explore = () =>{
             ,flexWrap:"wrap",
             justifyContent:"space-around"
         }}>
-            <LittleCard name="Gaming" />
-            <LittleCard name="Entertainment" />
-            <LittleCard name="Learning" />
-            <LittleCard name="Music" />
-            <LittleCard name="Trending" />
-            <LittleCard name="News" />
+            <LittleCard onPress={()=>{}} name="Gaming" />
+            <LittleCard onPress={()=>{}} name="Entertainment" />
+            <LittleCard onPress={()=>{}} name="Learning" />
+            <LittleCard onPress={()=>{}} name="Music" />
+            <LittleCard onPress={()=>{}} name="Trending" />
+            <LittleCard onPress={()=>{}} name="News" />
         </View>
         <Text style={{
             margin:8,

@@ -25,7 +25,8 @@ const SearchScreen = ({navigation}) => {
         fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${value}&type=video&key=${API_KEY}`)
         .then(res=>res.json())
         .then(data=>{
-
+             console.log(data.items);
+             
             setLoading(false)
             dispatch({type:"add", payload:data.items})
         })
@@ -76,6 +77,8 @@ const SearchScreen = ({navigation}) => {
                 videoId = {item.id.videoId}
                 title = {item.snippet.title}
                 channel = {item.snippet.channelTitle}
+                thumbnail= {item.snippet.thumbnails.high}
+                description = {item.snippet.description}
                 />
             }}
             KeyExtractor = {item=>item.id.videoId}

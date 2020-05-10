@@ -22,4 +22,4 @@
 * IOS
 * Android
 
-#### Used Languages
+#### Used Language

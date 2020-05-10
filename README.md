@@ -19,5 +19,7 @@
 
 ### YouTube Clone : A Clone of YouTube .
 ### Platforms Included
+* IOS
+* Android
 
 #### Used Languages

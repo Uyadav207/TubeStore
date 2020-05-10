@@ -17,9 +17,14 @@
   <img alt="GitHub followers" src="https://img.shields.io/github/followers/Uyadav207?label=Follow&style=social">
 </p>
 
-### YouTube Clone : A Clone of YouTube. Made with React-Native and Redux.
+### YouTube Clone : A Clone of YouTube. Made with React-Native and Redux. search for the video as much u want...
+
+
 ### Platforms Included
 * IOS
 * Android
 
 #### Used Language
+- [x] Javascript
+- [x] Node.js
+- [x] React

@@ -18,3 +18,6 @@
 </p>
 
 ### YouTube Clone : A Clone of YouTube .
+### Platforms Included
+
+#### Used Languages

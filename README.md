@@ -24,6 +24,8 @@
 * IOS
 * Android
 
+API's USED 
+- [x] Google API's
 #### Used Language
 - [x] Javascript
 - [x] Node.js

@@ -30,7 +30,7 @@ const LittleCard = ({name}) =>{
 
 const Explore = (props) =>{
     const cardData = useSelector(state=>{
-        return state
+        return state.cardData
       })
     return (
         <View style={{

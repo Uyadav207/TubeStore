@@ -6,14 +6,19 @@ import {AntDesign, Ionicons, MaterialIcons, Entypo} from '@expo/vector-icons';
 import {useSelector} from "react-redux";
 import Constant from 'expo-constants';
 import {useNavigation, useTheme} from "@react-navigation/native";
-
+import {useDispatch} from 'react-redux'
+import { FontAwesome } from '@expo/vector-icons';
 
 
 export default function HomeScreen({navigation}) {
+  const dispatch = useDispatch()
   const {colors} = useTheme()
+  const currTheme = useSelector(state=>{
+    return state.myDarkMode
+  })
     const mycolor = colors.iconColor
   const cardData = useSelector(state=>{
-    return state
+    return state.cardData
   })
   return (
     
@@ -42,8 +47,17 @@ export default function HomeScreen({navigation}) {
           }}>
       
         </Text> */}
+        <FontAwesome style={{
+          marginTop:20,
+          flexDirection:"row",
+          justifyContent: "space-around",
+          }} 
+          name="sun-o" size={32} color={mycolor} 
+          onPress={()=>dispatch({type:"change_theme", payload:!currTheme})}
+        />        
+            
         <Ionicons style={{
-          marginLeft:"45%",
+          marginLeft:"33%",
           marginTop:30,
           flexDirection:"row",
           justifyContent: "space-around",

@@ -17,7 +17,7 @@ const SearchScreen = ({navigation}) => {
     const [value,setValue] = useState("")
     const dispatch = useDispatch()
     const miniCardData = useSelector(state=>{
-        return state
+        return state.cardData
     })
     const [loading,setLoading] = useState(false)
     const fetchData = () =>{

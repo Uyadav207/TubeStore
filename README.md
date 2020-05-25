@@ -22,3 +22,7 @@
 
 Watching any Video just a click away.
 
+# How to Contribute ?
+
+- Make a pull request..
+

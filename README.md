@@ -10,10 +10,19 @@
 </h1>
 
 <p align="center">
-  <a href="https://github.com/Uyadav207/weatherly/blob/master/LICENSE">
+  <a href="https://github.com/Uyadav207/TubeStore/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="weatherly-react-app: Weatherly is released under the MIT license." />
   </a>
   <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
-  <img alt="GitHub followers" src="https://img.shields.io/github/followers/Uyadav207?label=Follow&style=social">
+  <img src="https://img.shields.io/github/followers/Uyadav207?label=Follow&style=social"/>
 </p>
+
+
+# What's This ?
+
+Watching any Video just a click away.
+
+# How to Contribute ?
+
+- Make a pull request..
 

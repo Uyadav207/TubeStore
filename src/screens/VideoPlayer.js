@@ -16,7 +16,8 @@ const VideoPlayer = ({route}) =>{
                javaScriptEnabled={true}
                domStorageEnabled={true}
                    source = {{uri:`http://www.youtube.com/embed/${videoId}`}}
-
+                   scrollEnabled={false}
+                    allowsFullscreenVideo={true}
                />
                <Text style={{
                    fontSize:20,

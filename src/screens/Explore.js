@@ -13,7 +13,6 @@ const LittleCard = ({name}) =>{
             backgroundColor:"red",
             height:50,
             width:180,
-            borderRadius:"50%",
             marginTop:10
         }}>
         <Text style={{

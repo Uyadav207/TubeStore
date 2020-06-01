@@ -20,6 +20,7 @@ export default function HomeScreen({navigation}) {
   const cardData = useSelector(state=>{
     return state.cardData
   })
+  console.log(cardData);
   return (
     
     <View style={{flex:1,
@@ -68,7 +69,9 @@ export default function HomeScreen({navigation}) {
         />        
             
             </View>
-    
+            {
+            (cardData!='')?
+
     <FlatList
       data={cardData}
       renderItem = {({item})=>{
@@ -81,7 +84,16 @@ export default function HomeScreen({navigation}) {
       
       KeyExtractor = {item=>item.id.videoId}
 
-    />
+          />
+           :
+     
+                  <View style={{flex:1, flexDirection:"row" ,justifyContent:'center'}}>
+                      <Text style={{marginTop:400, fontSize:20,color:mycolor }} >Search for something</Text>
+                  </View>
+
+        }
+
+                  
     </ScrollView>
     </View>
   );

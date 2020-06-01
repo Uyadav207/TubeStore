@@ -14,7 +14,7 @@ const Card = (props) =>{
 return (
     <TouchableOpacity onPress={()=>navigation.navigate("videoPlayer",{videoId:props.videoId,title:props.title})}>
       <View style={{
-            elevation:4,
+            elevation:7,
             margin:20,
             shadowColor: "#000",
         shadowOffset: {
@@ -23,11 +23,6 @@ return (
         },
         shadowOpacity: 0.25,
         shadowRadius: 3.84,
-
-        elevation: 4,
-        borderRadius:20
-      
-
       }}
     
       >

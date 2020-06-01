@@ -9,24 +9,23 @@ const MiniCard = (props) =>{
     const textColor = colors.iconColor;
 return (
     <TouchableOpacity onPress={()=>navigation.navigate("videoPlayer",{videoId:props.videoId,title:props.title})}>
-    <View style={{flexDirection:"row", margin:20, elevation:4,
-            margin:10,
+    <View style={{flexDirection:"row", margin:10, elevation:4,
+    height:120,
             shadowColor: "#000",
-            shadowOffset: {
-            width: 0,
-            height: 2,
-            },
-            shadowOpacity: 0.25,
-            shadowRadius: 3.84,
-            elevation: 5,
+            // shadowOffset: {
+            // width: 0,
+            // height: 2,
+            // },
+            // shadowOpacity: 0.25,
+            // shadowRadius: 3.84,
+            elevation: 4,
             borderRadius:5,
-            marginBottom:0
        }}>
         <Image
             source={{uri:`https://i.ytimg.com/vi/${props.videoId}/hqdefault.jpg`}}
             style={{
               width:"45%",
-              height:100,
+              height:120,
               borderRadius:5
             }}   
          />

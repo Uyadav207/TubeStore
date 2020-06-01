@@ -25,7 +25,7 @@ const SearchScreen = ({navigation}) => {
         fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${value}&type=video&key=${API_KEY}`)
         .then(res=>res.json())
         .then(data=>{
-             console.log(data.items);
+            //  console.log(data.items);
              
             setLoading(false)
             dispatch({type:"add", payload:data.items})
@@ -34,7 +34,7 @@ const SearchScreen = ({navigation}) => {
     return (
        <View style = {{
        flex:1,
-       marginTop:Constant.statusBarHeight
+       marginTop:Constant.statusBarHeight+10
        }}>
             <View style={{
                 padding:5,

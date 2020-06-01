@@ -5,7 +5,7 @@ import {createStackNavigator} from "@react-navigation/stack";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs"
 import Constant from 'expo-constants';
 import VideoPlayer from "./src/screens/VideoPlayer";
-import subscribe from "./src/screens/Subscribe";
+// import subscribe from "./src/screens/Subscribe";
 import Explore from "./src/screens/Explore";
 import Search from "./src/screens/Search"
 import Home from './src/screens/Home'
@@ -53,10 +53,10 @@ const RootHome=()=>{
             if (route.name === 'home') {
               iconName = 'home';
             } else if (route.name === 'explore') {
-              iconName = 'explore';
-            }else if(route.name === 'subscribe') {
-               iconName= 'subscriptions';
-            }
+              iconName = 'explore';}
+                    // }else if(route.name === 'subscribe') {
+                    //   iconName= 'subscriptions';
+                    // }
 
             // You can return any component that you like here!
             return <MaterialIcons name={iconName} size={20} color={color} />;
@@ -69,7 +69,7 @@ const RootHome=()=>{
     >
       <Tabs.Screen name = "home" component={Home} />
       <Tabs.Screen name = "explore" component={Explore} />
-      <Tabs.Screen name = "subscribe" component={subscribe} />
+      {/* <Tabs.Screen name = "subscribe" component={subscribe} /> */}
     </Tabs.Navigator>
   )
 }

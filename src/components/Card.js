@@ -40,7 +40,6 @@ return (
               flexDirection:"row",
               borderBottomLeftRadius: 5,
               borderBottomRightRadius:5,
-              backgroundColor:back
           }}>
           <MaterialIcons style={{marginTop:2, color:textColor, marginLeft:3}} name="account-circle" size={40}/>        
           <View style={{

@@ -40,7 +40,6 @@ export default function Header() {
           color: mycolor,
           fontWeight: "bold"
           }}>
-         TubeStore
         </Text>
       </View>
       <View style={{

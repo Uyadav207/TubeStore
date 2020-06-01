@@ -51,13 +51,15 @@ const SearchScreen = ({navigation}) => {
                         width:"70%",
                         backgroundColor:"#e6e6e6",
                         borderRadius: 50,
-                        height: 36,
-                        paddingLeft:"3%",
+                        height: 38,
+                        paddingTop:5,
+                        paddingLeft:"2%",
                         textAlignVertical: 'top'
                         }}
                     placeholder={'Start Typing...'}
                     underlineColorAndroid={'transparent'}
-                    autoCorrect={true} autoFocus={true}
+                    autoCorrect={false} 
+                    autoFocus={true}
                     autoCapitalize={'sentences'}
                     value = {value}
                     onChangeText = {(text)=>setValue(text)}

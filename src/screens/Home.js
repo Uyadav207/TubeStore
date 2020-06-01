@@ -86,9 +86,10 @@ export default function HomeScreen({navigation}) {
 
           />
            :
+           
      
                   <View style={{flex:1, flexDirection:"row" ,justifyContent:'center'}}>
-                      <Text style={{marginTop:400, fontSize:20,color:mycolor }} >Search for something</Text>
+                      <Text style={{marginTop:400, fontSize:20,color:mycolor }} >Search Something</Text>
                   </View>
 
         }

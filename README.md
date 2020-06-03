@@ -1,12 +1,10 @@
 <p align="center">
   <a>
-  <img src="https://img.icons8.com/plasticine/100/000000/android-os.png"/>
-    <img alt = "React" src="https://img.icons8.com/color/144/000000/react-native.png"/><img src="https://img.icons8.com/doodle/192/000000/youtube--v1.png"/>
-    <img src="https://img.icons8.com/plasticine/100/000000/mac-os.png"/>
+    <img alt="React" src="https://img.icons8.com/color/144/000000/react-native.png"/>
   </a>
 </p>
 <h1 align="center">
-  YouTube--CLONE
+  TubeSTore
 </h1>
 
 <p align="center">
@@ -43,4 +41,62 @@ menu using hook_admin_menu_output_alter().
 
  * To submit bug reports and feature suggestions, or track changes:
    https://www.drupal.org/project/issues/admin_menu
+   
+   
+REQUIREMENTS
+------------
 
+This module requires the following modules:
+
+ * Views (https://www.drupal.org/project/views)
+ * Panels (https://www.drupal.org/project/panels)
+
+RECOMMENDED MODULES
+-------------------
+
+ * Markdown filter (https://www.drupal.org/project/markdown):
+   When enabled, display of the project's README.md help will be rendered
+   with markdown.
+   
+ CONFIGURATION
+-------------
+
+The module has no menu or modifiable settings. There is no configuration. When
+enabled, the module will prevent the links from appearing. To get the links
+back, disable the module and clear caches.
+
+TROUBLESHOOTING
+---------------
+
+ * If the menu does not display, check the following:
+
+   - Are the "Access administration menu" and "Use the administration pages
+     and help" permissions enabled for the appropriate roles?
+
+   - Does html.tpl.php of your theme output the $page_bottom variable?
+
+FAQ
+---
+
+Q: I enabled "Aggregate and compress CSS files", but admin_menu.css is still
+   there. Is this normal?
+
+A: Yes, this is the intended behavior. the administration menu module only loads
+   its stylesheet as needed (i.e., on page requests by logged-on, administrative
+   users).
+   
+   
+MAINTAINERS
+-----------
+
+Current maintainers:
+ * Daniel F. Kudwien (sun) - https://www.drupal.org/user/54136
+ * Peter Wolanin (pwolanin) - https://www.drupal.org/user/49851
+ * Stefan M. Kudwien (smk-ka) - https://www.drupal.org/user/48898
+ * Dave Reid (Dave Reid) - https://www.drupal.org/user/53892
+
+This project has been sponsored by:
+ * UNLEASHED MIND
+   Specialized in consulting and planning of Drupal powered sites, UNLEASHED
+   MIND offers installation, development, theming, customization, and hosting
+   to get you started. Visit https://www.unleashedmind.com for more information.

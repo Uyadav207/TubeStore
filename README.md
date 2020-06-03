@@ -24,79 +24,72 @@ CONTENTS OF THIS FILE
  * Recommended modules
  * Installation
  * Configuration
- * Troubleshooting
+ * Security
  * FAQ
  * Maintainers
  
 INTRODUCTION
 ------------
 
-The Administration Menu module displays the entire administrative menu tree
-(and most local tasks) in a drop-down menu, providing administrators one- or
-two-click access to most pages.  Other modules may also add menu links to the
-menu using hook_admin_menu_output_alter().
-
- * For a full description of the module, visit the project page:
-   https://www.drupal.org/project/admin_menu
-
- * To submit bug reports and feature suggestions, or track changes:
-   https://www.drupal.org/project/issues/admin_menu
-   
+TubeSTore is Mobile Application made using Google's APIs and React-Native. User can surf over 10 billion videos.user can listen, Entertain and learn no matter where they are.
    
 REQUIREMENTS
 ------------
+Before Getting started with the contribution PLease Ensure to visit follow pages for Guidance and better understanding :
 
-This module requires the following modules:
-
- * Views (https://www.drupal.org/project/views)
- * Panels (https://www.drupal.org/project/panels)
+- [React-Native](https://reactnative.dev/)
+- [Expo-Cli WorkFlow](https://docs.expo.io/workflow/expo-cli/)
+- [React-Navigation](https://reactnavigation.org/docs/getting-started) 
 
 RECOMMENDED MODULES
 -------------------
 
- * Markdown filter (https://www.drupal.org/project/markdown):
-   When enabled, display of the project's README.md help will be rendered
-   with markdown.
+ * This Repo Requires no Modules..
    
- CONFIGURATION
+CONFIGURATION
 -------------
+### Dependencies
 
-The module has no menu or modifiable settings. There is no configuration. When
-enabled, the module will prevent the links from appearing. To get the links
-back, disable the module and clear caches.
+```
+|---"@react-native-community/masked-view": "0.1.6",
+    |---"@react-navigation/bottom-tabs": "^5.3.4",
+    |---"@react-navigation/native": "^5.2.4",
+    |---"@react-navigation/stack": "^5.2.19",
+    |---"dotenv": "^8.2.0",
+    |---"expo": "~37.0.3",
+    |---"react": "~16.9.0",
+    |---"react-dom": "~16.9.0",
+    |---"react-native": "https://github.com/expo/react-native/archive/sdk-37.0.1.tar.gz",
+    |---"react-native-gesture-handler": "~1.6.0",
+    |---"react-native-reanimated": "~1.7.0",
+    |---"react-native-safe-area-context": "0.7.3",
+    |---"react-native-screens": "~2.2.0",
+    |---"react-native-web": "~0.11.7",
+    |---"react-native-webview": "^9.4.0",
+    |---"react-redux": "^7.2.0",
+    |---"redux": "^4.0.5"
+```
+### Dependencies
 
-TROUBLESHOOTING
----------------
+```
+"@babel/core": "^7.8.6",
+    "babel-preset-expo": "~8.1.0",
+    "react-native-dotenv": "^0.2.0"
+```
 
- * If the menu does not display, check the following:
+Security
+---------
 
-   - Are the "Access administration menu" and "Use the administration pages
-     and help" permissions enabled for the appropriate roles?
-
-   - Does html.tpl.php of your theme output the $page_bottom variable?
+- Visit--->[SECURITY.md](https://github.com/Uyadav207/TubeStore/blob/master/SECURITY.md)
 
 FAQ
 ---
 
-Q: I enabled "Aggregate and compress CSS files", but admin_menu.css is still
-   there. Is this normal?
-
-A: Yes, this is the intended behavior. the administration menu module only loads
-   its stylesheet as needed (i.e., on page requests by logged-on, administrative
-   users).
+- For Queryies Raise Issues [Here](https://github.com/Uyadav207/TubeStore/issues)
    
    
 MAINTAINERS
 -----------
 
 Current maintainers:
- * Daniel F. Kudwien (sun) - https://www.drupal.org/user/54136
- * Peter Wolanin (pwolanin) - https://www.drupal.org/user/49851
- * Stefan M. Kudwien (smk-ka) - https://www.drupal.org/user/48898
- * Dave Reid (Dave Reid) - https://www.drupal.org/user/53892
-
-This project has been sponsored by:
- * UNLEASHED MIND
-   Specialized in consulting and planning of Drupal powered sites, UNLEASHED
-   MIND offers installation, development, theming, customization, and hosting
-   to get you started. Visit https://www.unleashedmind.com for more information.
+ * [Utkarsh-Yadav](https://github.com/Uyadav207)

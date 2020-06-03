@@ -46,6 +46,26 @@ RECOMMENDED MODULES
 
  * This Repo Requires no Modules..
    
+Installation
+------------
+
+- Fork the Repository [HERE](https://github.com/Uyadav207/TubeStore)
+- Do not forget to star it. ⭐
+
+```
+git clone <FileName>.git 
+cd TubeStore
+```
+Running Local
+
+```
+yarn start
+---
+---    // The server is loading
+---
+scan the QR from Expo Application.
+```
+   
 CONFIGURATION
 -------------
 ### Dependencies

@@ -18,104 +18,29 @@
 </p>
 
 
-# What's This ?
+CONTENTS OF THIS FILE
+---------------------
 
-User can search for over 10 Billion Videos, can play and Enjoy, Learn, Entertain themselves.
+ * Introduction
+ * Requirements
+ * Recommended modules
+ * Installation
+ * Configuration
+ * Troubleshooting
+ * FAQ
+ * Maintainers
+ 
+INTRODUCTION
+------------
 
-## Getting Started
+The Administration Menu module displays the entire administrative menu tree
+(and most local tasks) in a drop-down menu, providing administrators one- or
+two-click access to most pages.  Other modules may also add menu links to the
+menu using hook_admin_menu_output_alter().
 
-React is the framework of javascript made by **Facebook_Community**, well documented on [Learn REACT](https://reactjs.org). 
+ * For a full description of the module, visit the project page:
+   https://www.drupal.org/project/admin_menu
 
-
-* Fork the [Repository](https://github.com/Uyadav207/).
-* Now Head On to your repository section and download a zip or Open on Desktop **Recommended** (Open On Desktop).
-* Or Follow the Step : Copy The code Below 👇👇👇👇
- * Open a Terminal
-```
-git clone <repolink.git>
-cd TubeStore
-code . / atom .
-```
-* use `code . ` for [VsCode](https://code.visualstudio.com/TubeStore)
-* use `atom .` for [Atom](https://atom.io/)
-
-### Prerequisites
-
-* React-Native Understanding working with **Expo-Cli** and **React-native-Cli** .
-* Node.js Understanding it should be installed in your local Machine.
-* **Bash Knowledge** : If Not follow the steps you will learn a little of it on the way of project setup.
-* UI and UX Dwsigning : IOS or ANDROID...📱
- * you are Good to go Now .... 🖖❤👍👍
-
-### Installing
-
-Follow the Steps Below to Install the Packages Required.
-
-```
-npm install 
-
-```
-if any error occurs : Do install the Packages seperately like Below:
-
-```
-$ yarn add @fortawesome/fontawesome-svg-core
-$ yarn add @fortawesome/free-solid-svg-icons
-$ yarn add @fortawesome/react-fontawesome
-```
-Wait Until installation is Finished..........Now follow the steps below.
-
-* Using VsCode
-```
-code .
-```
-
-* Using Atom
-```
-atom .
-```
-
-## Running the tests
-
-* To run the test on Your Local Environment.
-```
-npm start
-```
-or
-```
-yarn start
-```
-or
-```
-npm run-android or IOS
-```
-
-## Break down into end to end tests
-
-Now to Preview what's in it follow the steps below:
-* Head on to any Browser **Chrome RECOMMENDED**
- * go to :
- ```
- localhost:3000  
-```
-Now You are Good to go 😜😜😍😍👌👌👌👌👌👌 You did a Great Job Folk..and eventually u Learned Bash 👨‍💻👨‍💻
-
-## Deployment
-
-Not Yet Deplyed. 
-
-## Built With
-
-* [ReactJS](https://reactjs.org/) - The web framework used for Front-End
-* [Githug Pages](https://pages.github.com/) - Deployment
-
-## Author
-
-* **Utkarsh Yadav** - *Github student developer and a MERN developer* - [@Uyadav207](https://github.com/Uyadav207)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
+ * To submit bug reports and feature suggestions, or track changes:
+   https://www.drupal.org/project/issues/admin_menu
 

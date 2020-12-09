@@ -24,7 +24,7 @@ return (
             source={{uri:`https://i.ytimg.com/vi/${props.videoId}/hqdefault.jpg`}}
             style={{
               width:"45%",
-              height:100,
+              height:90,
               borderRadius:5
             }}   
          />

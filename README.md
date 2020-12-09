@@ -1,7 +1,6 @@
 <p align="center">
-  <a>
-    <img alt="React" src="https://img.icons8.com/color/144/000000/react-native.png"/>
-  </a>
+    <img alt="React" height="350" width="200" src="https://github.com/Uyadav207/TubeStore/blob/master/assets/screenshot1.jpeg"/>
+    <img alt="React" height="350" width="200" src="https://github.com/Uyadav207/TubeStore/blob/master/assets/screenshot2.jpeg"/>
 </p>
 <h1 align="center">
   TubeSTore

@@ -1,17 +1,21 @@
 {
   "expo": {
-    "name": "tub-store",
-    "slug": "tub-store",
+    "name": "TubeStore",
+    "slug": "TubeStore",
     "platforms": [
       "ios",
       "android",
       "web"
     ],
+    "android": {
+      "package": "com.utkarsh_progy.tubestore",
+      "versionCode": 1
+    },
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/play.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/play.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -20,9 +24,6 @@
     },
     "assetBundlePatterns": [
       "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    }
+    ]
   }
 }

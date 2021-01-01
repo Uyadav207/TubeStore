@@ -9,7 +9,7 @@ import { useDispatch } from 'react-redux'
 import { FontAwesome } from '@expo/vector-icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ScrollView } from 'react-native';
-
+import { StatusBar } from 'expo-status-bar';
 
 export default function HomeScreen({ navigation }) {
   const dispatch = useDispatch()
@@ -27,11 +27,12 @@ export default function HomeScreen({ navigation }) {
         marginTop: Constant.statusBarHeight,
         backgroundColor: colors.headerColor,
       }}>
+        <StatusBar style="light" backgroundColor="#000" />
           <View style={styles.header}>
           <View style={styles.header_text}>
             <Entypo name="video" size={32} color="red" />
             <Text style={{
-            fontSize: 32,
+            fontSize: 30,
             color: mycolor,
             fontWeight: "bold"
             }}>
@@ -39,12 +40,12 @@ export default function HomeScreen({ navigation }) {
           </Text>
           </View>
             <FontAwesome
-              name="sun-o" size={32} color={mycolor}
+              name="sun-o" size={30} color={mycolor}
               onPress={() => dispatch({ type: "change_theme", payload: !currTheme })}
             />
 
             <Ionicons
-              name="md-search" size={32} color={mycolor}
+              name="md-search" size={30} color={mycolor}
               onPress={() => navigation.navigate("search")}
             />
 
@@ -67,7 +68,9 @@ export default function HomeScreen({ navigation }) {
               </ScrollView>
               :
               <View style={{ flex: 1, flexDirection: "row", justifyContent: 'center' }}>
-                <Text style={{ marginTop: 400, fontSize: 20, color: mycolor }} >Search Something</Text>
+                <Text style={{ marginTop: 400, fontSize: 20, color: mycolor }} >
+                <Entypo name="video" size={32} color="red" />
+                </Text>
               </View>
           }
       </SafeAreaView>
@@ -79,10 +82,13 @@ const styles = {
     paddingHorizontal: 10,
     flexDirection: "row",
     justifyContent: "space-between",
-    paddingBottom: 10
+    paddingBottom: 10,
+    alignItems: "center"
   },
   header_text: {
-    flexDirection: "row"
+    flexDirection: "row",
+    flex: 0.6,
+    alignItems: "center"
   }
 }
 

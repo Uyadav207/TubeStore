@@ -49,7 +49,7 @@ Installation
 ------------
 
 - Fork the Repository [HERE](https://github.com/Uyadav207/TubeStore)
-- Do not forget to star it. ⭐
+- Do not forget to star it.
 
 ```
 git clone <FileName>.git 

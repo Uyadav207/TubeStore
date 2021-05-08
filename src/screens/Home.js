@@ -10,70 +10,76 @@ import { FontAwesome } from '@expo/vector-icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ScrollView } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
+import { MaterialIcons } from '@expo/vector-icons';
+import { color } from 'react-native-reanimated';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
+
 
 export default function HomeScreen({ navigation }) {
   const dispatch = useDispatch()
   const { colors } = useTheme()
   const currTheme = useSelector(state => {
     return state.myDarkMode
-    })
-  const mycolor = colors.iconColor
+  })
+  const mycolor = colors.iconColor;
   const cardData = useSelector(state => {
-      return state.cardData
-   })
-  console.log(cardData);
+    return state.cardData
+  })
+  console.log(currTheme);
   return (
-      <SafeAreaView style={{
-        marginTop: Constant.statusBarHeight,
-        backgroundColor: colors.headerColor,
-      }}>
-        <StatusBar style="light" backgroundColor="#000" />
-          <View style={styles.header}>
-          <View style={styles.header_text}>
-            <Entypo name="video" size={32} color="red" />
-            <Text style={{
-            fontSize: 30,
+    <SafeAreaView style={{
+      flex: 1,
+      marginTop: Constant.statusBarHeight,
+      backgroundColor: colors.headerColor,
+    }}>
+      <StatusBar style={currTheme === false ? "light" : "dark"} />
+      <View style={styles.header}>
+        <View style={styles.header_text}>
+          <MaterialIcons name="video-collection" size={24} color="#E85075" />
+          <Text style={{
+            fontSize: 24,
             color: mycolor,
             fontWeight: "bold"
-            }}>
+          }}>
             TubeStore
           </Text>
-          </View>
-            <FontAwesome
-              name="sun-o" size={30} color={mycolor}
-              onPress={() => dispatch({ type: "change_theme", payload: !currTheme })}
+        </View>
+        <FontAwesome
+          name="sun-o" size={30} color={mycolor}
+          onPress={() => dispatch({ type: "change_theme", payload: !currTheme })}
+        />
+
+        <Ionicons
+          name="md-search" size={30} color={mycolor}
+          onPress={() => navigation.navigate("search")}
+        />
+
+      </View>
+      {
+        (cardData != '') ?
+        <View>
+          <ScrollView>
+            <FlatList KeyExtractor={item => item.id.videoId}
+              data={cardData}
+              renderItem={({ item }) => {
+                return <Card
+                  videoId={item.id.videoId}
+                  title={item.snippet.title}
+                  channel={item.snippet.channelTitle}
+                />
+              }}
             />
-
-            <Ionicons
-              name="md-search" size={30} color={mycolor}
-              onPress={() => navigation.navigate("search")}
-            />
-
+          </ScrollView>
           </View>
-          {
-            (cardData != '') ?
-            <ScrollView>
-              <FlatList KeyExtractor={ item => item.id.videoId}
-                data={cardData}
-                renderItem={({ item }) => {
-                  return <Card
-                    videoId={item.id.videoId}
-                    title={item.snippet.title}
-                    channel={item.snippet.channelTitle}
-                  />
-                }}
-
-                
-              />
-              </ScrollView>
-              :
-              <View style={{ flex: 1, flexDirection: "row", justifyContent: 'center' }}>
-                <Text style={{ marginTop: 400, fontSize: 20, color: mycolor }} >
-                <Entypo name="video" size={32} color="red" />
-                </Text>
-              </View>
-          }
-      </SafeAreaView>
+          :
+          <View style={styles.container}>
+            <Text style={styles.welcome}>Welcome to TubeStore!</Text>
+            <Text style={styles.instructions}>To get started, Search for the video you want to enjoy!</Text>
+            <Text style={styles.instructions}>Picture in Picture mode available for IOS 14 above!</Text>
+          </View>
+          
+      }
+    </SafeAreaView>
   );
 }
 
@@ -87,8 +93,26 @@ const styles = {
   },
   header_text: {
     flexDirection: "row",
-    flex: 0.6,
     alignItems: "center"
+  },
+  container: {  
+    justifyContent: 'center',  
+    alignItems: 'center',  
+    backgroundColor: Colors.headerColor,
+    AlignSelf: 'center'
+  },  
+  welcome: {  
+    fontSize: 20,  
+    textAlign: 'center',  
+    margin: 10,
+    padding: 10,
+    fontWeight: "bold",  
+    color: "#5875FF"
+  },  
+  instructions: {  
+    textAlign: 'center',  
+    color: "#5875FF",  
+    marginBottom: 5,  
   }
 }
 

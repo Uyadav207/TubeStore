@@ -10,7 +10,7 @@ const LittleCard = ({name}) =>{
     
     return (
         <View style={{
-            backgroundColor:"red",
+            backgroundColor:"#E85075",
             height:50,
             width:180,
             marginTop:10

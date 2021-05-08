@@ -2,7 +2,7 @@ import React from 'react';
 import { SafeAreaView, Text, View } from 'react-native';
 import { Ionicons, Entypo } from '@expo/vector-icons';
 import { useNavigation, useTheme } from "@react-navigation/native";
-
+import { MaterialIcons } from '@expo/vector-icons';
 
 
 export default function Header() {
@@ -29,13 +29,14 @@ export default function Header() {
         margin: 6,
         marginTop: 10
       }}>
-        <Entypo style={{ marginLeft: 10 }} name="video" size={32} color="red" />
+        <MaterialIcons name="video-collection" size={24} color="#E85075" />
         <Text style={{
           fontSize: 22,
           marginLeft: 5,
           color: mycolor,
           fontWeight: "bold"
         }}>
+          TubeStore
         </Text>
       </View>
       <View style={{

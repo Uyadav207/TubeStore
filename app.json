@@ -1,29 +1,37 @@
 {
   "expo": {
-    "name": "TubeStore",
-    "slug": "TubeStore",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
-    "android": {
-      "package": "com.utkarsh_progy.tubestore",
-      "versionCode": 1
-    },
+    "name": "TubStore",
+    "slug": "TubStore",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/play.png",
+    "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/play.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#eee"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.developments.edison",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.developments.edison",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#fff"
+      },
+      "package": "com.developments.edison"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
   }
 }

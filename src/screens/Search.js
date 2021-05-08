@@ -5,11 +5,8 @@ import MiniCard from "../components/MiniCard";
 import Constant from "expo-constants"
 import { useSelector, useDispatch } from "react-redux";
 import { useTheme } from "@react-navigation/native";
-import { API_KEY } from 'react-native-dotenv'
 
-
-
-
+import { SOME_KEY } from 'react-native-dotenv'
 
 const SearchScreen = ({ navigation }) => {
     const { colors } = useTheme()
@@ -22,7 +19,7 @@ const SearchScreen = ({ navigation }) => {
     const [loading, setLoading] = useState(false)
     const fetchData = () => {
         setLoading(true)
-        fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${value}&type=video&key=${API_KEY}`)
+        fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${value}&type=video&key=${SOME_KEY}`)
             .then(res => res.json())
             .then(data => {
                 setLoading(false)

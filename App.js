@@ -19,18 +19,18 @@ const customDarkTheme = {
   ...DarkTheme,
   colors: {
     ...DarkTheme.colors,
-    headerColor: "#1e1e1e",
-    iconColor: "white",
-    backColor: "black"
+    headerColor: "#151C22",
+    iconColor: "#5875FF",
+    backColor: "#0F141A"
   }
 }
 const customDefaultTheme = {
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
-    headerColor: "white",
+    headerColor: "#ddd",
     iconColor: "black",
-    backColor: "white"
+    backColor: "#eee"
 
   }
 }
@@ -59,7 +59,7 @@ const RootHome = () => {
         },
       })}
       tabBarOptions={{
-        activeTintColor: '#d63447',
+        activeTintColor: '#E85075',
         inactiveTintColor: 'gray',
       }}
     >

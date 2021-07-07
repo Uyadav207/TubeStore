@@ -15,8 +15,7 @@
   <img src="https://img.shields.io/github/followers/Uyadav207?label=Follow&style=social"/>
 </p>
 
-
-CONTENTS OF THIS FILE
+Table Of Content
 ---------------------
 
  * Introduction
@@ -31,7 +30,7 @@ CONTENTS OF THIS FILE
 INTRODUCTION
 ------------
 
-TubeSTore is Mobile Application made using Google's APIs and React-Native. User can surf over 10 billion videos.user can listen, Entertain and learn no matter where they are.
+TubeSTore is Mobile Application made using Google's APIs and React-Native. User can surf over 10 billion videos. Users can listen, Entertain and learn no matter where they are. Structured and Developed React Native, Redux video streaming application integrating YouTube APIS. Added 2 additional features: Dark Mode and Picture in Picture mode enabled in IOS-14 above.
    
 REQUIREMENTS
 ------------
@@ -44,7 +43,9 @@ Before Getting started with the contribution PLease Ensure to visit follow pages
 RECOMMENDED MODULES
 -------------------
 
- * This Repo Requires no Modules..
+ * React.js - Framework for Building UI and Control its flowusing Javascript.
+ * Redux - A state management Library for amanging States in Javascript Application.
+ * React-Nativigation - Used for Navigating from diffrent Screen Back and Forth.
    
 Installation
 ------------
@@ -52,13 +53,13 @@ Installation
 - Fork the Repository [HERE](https://github.com/Uyadav207/TubeStore)
 - Do not forget to star it.
 
-```
+```bash
 git clone <FileName>.git 
 cd TubeStore
 ```
 Running Local
 
-```
+```bash
 yarn start
 ---
 ---    // The server is loading
@@ -89,18 +90,11 @@ CONFIGURATION
     |---"react-redux": "^7.2.0",
     |---"redux": "^4.0.5"
 ```
-### Dependencies
-
-```
-"@babel/core": "^7.8.6",
-    "babel-preset-expo": "~8.1.0",
-    "react-native-dotenv": "^0.2.0"
-```
 
 Security
 ---------
 
-- Visit--->[SECURITY.md](https://github.com/Uyadav207/TubeStore/blob/master/SECURITY.md)
+- [SECURITY.md](https://github.com/Uyadav207/TubeStore/blob/master/SECURITY.md) 
 
 FAQ
 ---
@@ -112,4 +106,5 @@ MAINTAINERS
 -----------
 
 Current maintainers:
+
  * [Utkarsh-Yadav](https://github.com/Uyadav207)

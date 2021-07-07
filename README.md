@@ -1,7 +1,7 @@
 <p align="center">
-     <img alt="React" height="350" width="200" src="https://raw.githubusercontent.com/Uyadav207/TubeStore/master/ezgif.com-video-to-gif(1).gif"/>
-    <img alt="React" height="350" width="200" src="https://raw.githubusercontent.com/Uyadav207/TubeStore/master/ezgif.com-video-to-gif(2).gif"/>
-    <img alt="React" height="350" width="200" src="https://raw.githubusercontent.com/Uyadav207/TubeStore/master/ezgif.com-video-to-gif.gif"/>
+     <img alt="React" height="350" width="200" src="https://raw.githubusercontent.com/Uyadav207/TubeStore/master/Images/ezgif.com-video-to-gif(1).gif"/>
+    <img alt="React" height="350" width="200" src="https://raw.githubusercontent.com/Uyadav207/TubeStore/master/Images/ezgif.com-video-to-gif(2).gif"/>
+    <img alt="React" height="350" width="200" src="https://github.com/Uyadav207/TubeStore/tree/master/Images/ezgif.com-video-to-gif.gif"/>
 </p>
 <h1 align="center">
   TubeSTore
@@ -51,7 +51,6 @@ Installation
 ------------
 
 - Fork the Repository [HERE](https://github.com/Uyadav207/TubeStore)
-- Do not forget to star it.
 
 ```bash
 git clone <FileName>.git 

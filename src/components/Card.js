@@ -20,9 +20,7 @@ const Card = (props) => {
                 },
                 shadowOpacity: 0.25,
                 shadowRadius: 3.84,
-            }}
-
-            >
+            }}>
                 <Image
                     source={{ uri: `https://i.ytimg.com/vi/${props.videoId}/hqdefault.jpg` }}
                     style={{

@@ -1,6 +1,6 @@
 import React from 'react';
 import { SafeAreaView, Text, View } from 'react-native';
-import { Ionicons, Entypo } from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
 import { useNavigation, useTheme } from "@react-navigation/native";
 import { MaterialIcons } from '@expo/vector-icons';
 

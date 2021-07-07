@@ -1,19 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { AntDesign, Ionicons, MaterialIcons, Entypo } from '@expo/vector-icons';
-import Constant from 'expo-constants';
+import { Text, View } from 'react-native';
+import { Ionicons,Entypo } from '@expo/vector-icons';
 import { useNavigation, useTheme } from "@react-navigation/native";
 
-
-
 export default function Header() {
-
-
   const navigation = useNavigation()
   const { colors } = useTheme()
   const mycolor = colors.iconColor
-
-
 
   return (
     <View style={{
@@ -21,9 +14,6 @@ export default function Header() {
       backgroundColor: colors.headerColor,
       flexDirection: "row",
       justifyContent: "space-between",
-      // shadowOffset: { width:10, height:10,},
-      // shadowColor: 'black',
-      // shadowOpacity: 0.05
     }}>
 
 

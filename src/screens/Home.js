@@ -57,19 +57,19 @@ export default function HomeScreen({ navigation }) {
       </View>
       {
         (cardData != '') ?
-        <View>
-          <ScrollView>
-            <FlatList KeyExtractor={item => item.id.videoId}
-              data={cardData}
-              renderItem={({ item }) => {
-                return <Card
-                  videoId={item.id.videoId}
-                  title={item.snippet.title}
-                  channel={item.snippet.channelTitle}
-                />
-              }}
-            />
-          </ScrollView>
+          <View>
+            <ScrollView>
+              <FlatList KeyExtractor={item => item.id.videoId}
+                data={cardData}
+                renderItem={({ item }) => {
+                  return <Card
+                    videoId={item.id.videoId}
+                    title={item.snippet.title}
+                    channel={item.snippet.channelTitle}
+                  />
+                }}
+              />
+            </ScrollView>
           </View>
           :
           <View style={styles.container}>
@@ -77,7 +77,7 @@ export default function HomeScreen({ navigation }) {
             <Text style={styles.instructions}>To get started, Search for the video you want to enjoy!</Text>
             <Text style={styles.instructions}>Picture in Picture mode available for IOS 14 above!</Text>
           </View>
-          
+
       }
     </SafeAreaView>
   );
@@ -95,24 +95,24 @@ const styles = {
     flexDirection: "row",
     alignItems: "center"
   },
-  container: {  
-    justifyContent: 'center',  
-    alignItems: 'center',  
+  container: {
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: Colors.headerColor,
     AlignSelf: 'center'
-  },  
-  welcome: {  
-    fontSize: 20,  
-    textAlign: 'center',  
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
     margin: 10,
     padding: 10,
-    fontWeight: "bold",  
+    fontWeight: "bold",
     color: "#5875FF"
-  },  
-  instructions: {  
-    textAlign: 'center',  
-    color: "#5875FF",  
-    marginBottom: 5,  
+  },
+  instructions: {
+    textAlign: 'center',
+    color: "#5875FF",
+    marginBottom: 5,
   }
 }
 

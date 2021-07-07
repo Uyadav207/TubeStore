@@ -69,6 +69,10 @@ scan the QR from Expo Application.
 - Note: Pull request are to be raised on another Branch than master.
 - [Tips to make your PR awesome](https://github.community/t/best-practices-for-pull-requests/10195)
    
+# Data Flow for the Application
+
+![Alt](https://github.com/Uyadav207/TubeStore/blob/master/Images/Untitled%20Diagram.png?raw=true)
+
 CONFIGURATION
 -------------
 ### Dependencies

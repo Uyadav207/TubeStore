@@ -43,9 +43,9 @@ Before Getting started with the contribution PLease Ensure to visit follow pages
 RECOMMENDED MODULES
 -------------------
 
- * React.js - Framework for Building UI and Control its flowusing Javascript.
- * Redux - A state management Library for amanging States in Javascript Application.
- * React-Nativigation - Used for Navigating from diffrent Screen Back and Forth.
+ * [React.js](https://reactjs.org) - Framework for Building UI and Control its flowusing Javascript.
+ * [Redux](https://redux.js.org/) - A state management Library for amanging States in Javascript Application.
+ * [React-Nativigation](https://reactnavigation.org/) - Used for Navigating from diffrent Screen Back and Forth.
    
 Installation
 ------------
@@ -65,6 +65,9 @@ yarn start
 ---
 scan the QR from Expo Application.
 ```
+
+- Note: Pull request are to be raised on another Branch than master.
+- [Tips to make your PR awesome](https://github.community/t/best-practices-for-pull-requests/10195)
    
 CONFIGURATION
 -------------

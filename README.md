@@ -1,7 +1,7 @@
 <p align="center">
-     <img alt="React" height="350" width="200" src="https://raw.githubusercontent.com/Uyadav207/TubeStore/master/Images/ezgif.com-video-to-gif(1).gif"/>
-    <img alt="React" height="350" width="200" src="https://raw.githubusercontent.com/Uyadav207/TubeStore/master/Images/ezgif.com-video-to-gif(2).gif"/>
-    <img alt="React" height="350" width="200" src="https://github.com/Uyadav207/TubeStore/blob/master/Images/ezgif.com-video-to-gif.gif?raw=true"/>
+     <img alt="React" height="400" width="200" src="https://github.com/Uyadav207/TubeStore/blob/master/Images/Screenshot%202021-11-27%20at%205.29.57%20PM.png?raw=true"/>
+    <img alt="React" height="400" width="200" src="https://github.com/Uyadav207/TubeStore/blob/master/Images/Screenshot%202021-11-27%20at%205.30.22%20PM.png?raw=true"/>
+    <img alt="React" height="400" width="200" src="https://github.com/Uyadav207/TubeStore/blob/master/Images/Screenshot%202021-11-27%20at%205.30.40%20PM.png?raw=true"/>
 </p>
 <h1 align="center">
   TubeSTore

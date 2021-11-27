@@ -3,6 +3,9 @@
     <img alt="React" height="400" width="200" src="https://github.com/Uyadav207/TubeStore/blob/master/Images/Screenshot%202021-11-27%20at%205.30.22%20PM.png?raw=true"/>
     <img alt="React" height="400" width="200" src="https://github.com/Uyadav207/TubeStore/blob/master/Images/Screenshot%202021-11-27%20at%205.30.40%20PM.png?raw=true"/>
 </p>
+<p align="center">
+<img  align="center" alt="React" height="200" width="400" src="https://github.com/Uyadav207/TubeStore/blob/master/Images/Screenshot%202021-11-27%20at%205.31.14%20PM.png?raw=true"/>
+     <p align="center">
 <h1 align="center">
   TubeSTore
 </h1>

@@ -25,11 +25,10 @@ export default function HomeScreen({ navigation }) {
   const cardData = useSelector(state => {
     return state.cardData
   })
-  console.log(currTheme);
+ 
   return (
     <SafeAreaView style={{
-      flex: 1,
-      marginTop: Constant.statusBarHeight,
+      flex: 0,
       backgroundColor: colors.headerColor,
     }}>
       <StatusBar style={currTheme === false ? "light" : "dark"} />

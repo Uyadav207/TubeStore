@@ -19,7 +19,7 @@ const SearchScreen = ({ navigation }) => {
     const [loading, setLoading] = useState(false)
     const fetchData = () => {
         setLoading(true)
-        fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${value}&type=video&key=${SOME_KEY}`)
+        fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${value}&type=video&key=AIzaSyCfmjjU_nnFOvOKsIZKz6_37wit9WXqCTI`)
             .then(res => res.json())
             .then(data => {
                 setLoading(false)
@@ -29,10 +29,10 @@ const SearchScreen = ({ navigation }) => {
     return (
         <View style={{
             flex: 1,
-            marginTop: Constant.statusBarHeight + 10
+            marginTop: Constant.statusBarHeight
         }}>
             <View style={{
-                padding: 5,
+                paddingVertical: 3,
                 flexDirection: "row",
                 justifyContent: "space-around",
                 elevation: 4,
@@ -40,16 +40,18 @@ const SearchScreen = ({ navigation }) => {
             }}>
                 <Ionicons name="md-arrow-back" size={32}
                     onPress={() => navigation.goBack()}
-                    style={{ color: mycolor }} />
+                    style={{ color: mycolor, paddingVertical:  5 }} />
                 <TextInput
                     style={{
                         width: "70%",
-                        backgroundColor: "#e6e6e6",
+                        backgroundColor: colors.headerColor,
                         borderRadius: 50,
                         height: 38,
                         paddingTop: 5,
                         paddingLeft: "2%",
-                        textAlignVertical: 'top'
+                        textAlignVertical: 'top',
+                        color: mycolor,
+                        lineHeight: 20
                     }}
                     placeholder={'Start Typing...'}
                     underlineColorAndroid={'transparent'}
@@ -63,7 +65,7 @@ const SearchScreen = ({ navigation }) => {
                     name="md-send"
                     size={32}
                     onPress={() => fetchData()}
-                    style={{ color: mycolor }}
+                    style={{ color: mycolor, paddingVertical: 5 }}
                 />
             </View>
             {loading ? <ActivityIndicator style={{ marginTop: 10 }} size="large" color={'grey'} /> : null}
